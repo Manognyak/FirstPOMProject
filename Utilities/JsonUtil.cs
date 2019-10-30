@@ -6,7 +6,6 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 using System.IO;
 
-
 namespace FirstPOMProject.Utilities
 {
     class JsonUtil

@@ -7,7 +7,7 @@ using System.IO;
 
 namespace FirstPOMProject.Utilities
 {
-    static class FileUtil
+    public  class FileUtil
     {
         public static string ReadTextFile(string filename)
         {

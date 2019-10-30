@@ -18,7 +18,7 @@ namespace FirstPOMProject.TestSetup
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            driver.Navigate().GoToUrl("https://www.automationpractice.com");
+            driver.Navigate().GoToUrl("http://www.automationpractice.com");
         }
 
         [TestCleanup]
