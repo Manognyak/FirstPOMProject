@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Support.UI;
 
 namespace FirstPOMProject.Utilities
 {
@@ -31,6 +32,11 @@ namespace FirstPOMProject.Utilities
             element.Click();
             element.SendKeys(text);
         }
-
+        public void selectdropdown(By locator, String text)
+        {
+            IWebElement element = webDriver.FindElement(locator);
+            var selectdropdownoptions = new SelectElement(element);
+            selectdropdownoptions.SelectByText(text);
+        }
     }
 }

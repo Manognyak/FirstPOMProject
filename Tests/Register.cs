@@ -18,7 +18,6 @@ namespace FirstPOMProject
             homePage = new HomePage(driver);
             signInPage= new SigninPage(driver);
             registerpage = new RegisterPage(driver);
-
             homePage.ClickSignin();
             Thread.Sleep(5000);
             signInPage.CreateAccount(randomemailid);
