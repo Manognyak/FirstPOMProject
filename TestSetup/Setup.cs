@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
+using System.Configuration;
 
 namespace FirstPOMProject.TestSetup
 {
@@ -18,7 +19,9 @@ namespace FirstPOMProject.TestSetup
         {
             driver = new ChromeDriver();
             driver.Manage().Window.Maximize();
-            driver.Navigate().GoToUrl("http://www.automationpractice.com");
+            var url = ConfigurationManager.AppSettings["Appurl"];
+            driver.Navigate().GoToUrl(url);
+         
         }
 
         [TestCleanup]
