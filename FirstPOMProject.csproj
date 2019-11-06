@@ -64,15 +64,18 @@
     <Compile Include="TestSetup\Setup.cs" />
     <Compile Include="Tests\Register.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Utilities\FileUtil.cs" />
-    <Compile Include="Utilities\JsonUtil.cs" />
-    <Compile Include="Utilities\SeleniumActions.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutomationFramework\AutomationFramework.csproj">
+      <Project>{616f3467-4c57-43f2-bd6f-3a09b3bf3497}</Project>
+      <Name>AutomationFramework</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
