@@ -4,7 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
-using FirstPOMProject.TestSetup;
 using FirstPOMProject.Utilities;
 using System.Threading;
 
